@@ -21,7 +21,7 @@
 
 <body>
 
-    <section id="login-page">
+    <section id="login-page" class="hidden">
 
         <div class="flex flex-col justify-center items-center h-screen">
 
@@ -52,7 +52,7 @@
 
     </section>
 
-    <section id="main-page" class="hidden">
+    <section id="main-page" class="bg-base-200">
 
         <div class="navbar bg-base-100 shadow-sm px-30">
             <div class="flex-1">
@@ -62,6 +62,79 @@
                 <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
                 <a onclick="" href="" class="btn btn-error" id="logout-button">Logout</a>
             </div>
+        </div>
+
+        <div class="top-buttons bg-white mt-7 flex  p-3 gap-2 mr-30 ml-30 rounded-box shadow-sm">
+
+            <a href="" class="btn">All</a>
+            <a href="" class="btn">Open</a>
+            <a href="" class="btn">Closed</a>
+
+        </div>
+
+        <div class="box-top  bg-white mt-7 flex justify-between p-4 gap-2 mr-30 ml-30 rounded-box shadow-sm">
+
+            <div>
+
+                <h2 class="text-[18px] font-bold">50 Issues</h2>
+                <p>Track and manage your project's issues</p>
+            </div>
+
+            <div class="flex gap-4 mt-3">
+                <span class="text-[16px] font-semibold"><i class="fa-solid fa-circle text-green-500"></i>Open</span>
+                <span class="text-[16px] font-semibold"><i class="fa-solid fa-circle text-purple-500"></i>Closed</span>
+            </div>
+
+        </div>
+
+        <div id="issues-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 px-30">
+
+            <!-- Open the modal using ID.showModal() method -->
+            <button class="btn" onclick="my_modal_1.showModal()">open modal</button>
+
+            <dialog id="my_modal_1" class="modal">
+
+                <div class="modal-box">
+
+                    <h3 class="text-lg font-bold">Fix broken image uploads</h3>
+
+                    <div class="flex gap-2">
+
+                        <a href="" class="btn bg-green-200 text-white font-semibold inline-block">Opened</a>
+                        <span><i class="fa-solid fa-circle text-gray-400"></i></span>
+                        <p class="text-[#64748B]">Opened by Fahim Ahmed</p>
+                        <span><i class="fa-solid fa-circle text-gray-400"></i></span>
+                        <p class="text-[#64748B]">22/02/2026</p>
+
+                    </div>
+
+                    <p class="py-4 text-[#64748B]">The navigation menu doesn't collapse properly on mobile devices. Need to fix the responsive behavior.</p>
+
+                    <div>
+
+                        <div>
+                            <p class="text-[#64748B]">Assignee:</p>
+                            <h2 class="text-black font-semibold">John Doe</h2>
+                        </div>
+
+                        <div>
+                            <p class="text-[#64748B]">Priority:</p>
+                            <h2 class="bg-red-300 inline-block rounded p-2 text-white font-semibold">High</h2>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-action">
+                        <form method="dialog">
+                            <!-- if there is a button in form, it will close the modal -->
+                            <button class="btn btn-primary">Close</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </dialog>
+
         </div>
 
     </section>
