@@ -77,10 +77,9 @@ const loadIssues = () => {
     fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
         .then(response => response.json())
         .then(data => {
-            allIssues = data.data // store full data
-            renderFilteredIssues() // show all by default
+            allIssues = data.data 
+            renderFilteredIssues() 
         })
-        .catch(err => console.error("Failed to load issues:", err))
 }
 loadIssues()
 
@@ -169,3 +168,17 @@ const showIssues = (issues) => {
     })
 }
 
+const searchInput = document.getElementById("search-input")
+searchInput.addEventListener("input", () => {
+
+    const searchValue = searchInput.value.trim().toLowerCase()
+    fetch("https://phi-lab-server.vercel.app/api/v1/lab/issues")
+        .then(response => response.json())
+        .then(data => {
+            const allIssues = data.data
+            const filteredIssues = allIssues.filter(issue => 
+                issue.title.toLowerCase().includes(searchValue) || issue.description.toLowerCase().includes(searchValue)
+            )
+            showIssues(filteredIssues)
+        })
+})
