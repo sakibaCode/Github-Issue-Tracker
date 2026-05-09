@@ -1,29 +1,34 @@
-**1. What is the difference between var, let, and const?**
-  
-  -var : function scoped, can't be redeclared 
-  -let : block scoped, allow reassignment.
-  -const : block scoped, can't be redeclared.
+# Github Issue Tracker
 
-**2. What is the spread operator (...)?**
+A practice project built to learn and explore web development with HTML, Tailwind CSS, and vanilla JavaScript.
 
- -is a js syntex expands array/object/strings into individual elements.It is primarily used to copy , pass or merge data.
+##  Purpose
 
-**3.What is the difference between map(), filter(), and forEach()?**
+This is a personal learning project. The goal was to practice building a functional issue tracker interface with features like search and user authentication.
 
-  -map(): changes each item into a new array.
-  -filter(): selects that matches specific charactaristics in a new array.
-  -forEach(): performs operation for each item of array.
+## 🛠️ Built With
 
-**4.What is an arrow function?**
+- HTML5
+- CSS3 + Tailwind CSS
+- Vanilla JavaScript
 
-   -is a concise way to write function with an arrow(=>).
-   -syntex:
-    const functionName = (parameters) => {
-      // function body
-      return value; // optional if using a block
-    };
 
-**5.What are template literals?**
+##  What I Practiced
 
- -a way to create strings in JavaScript using backticks (``) instead of single or double quotes.
+- Setting up and configuring Tailwind CSS
+- Implementing a search feature
+- Adding login and logout functionality
+- Structuring a front-end project
 
+##  Live Demo: 
+https://github-issue-tracker-amber.vercel.app/
+
+## Preview
+
+<img width="1910" height="902" alt="image" src="https://github.com/user-attachments/assets/0191f7fa-87a3-42e8-99da-8c4779588325" />
+<img width="1894" height="916" alt="image" src="https://github.com/user-attachments/assets/9f6073e8-836d-44d2-9e42-982259c003b3" />
+
+
+---
+
+*Made for learning purposes by [sakibaCode](https://github.com/sakibaCode)*
