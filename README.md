@@ -6,7 +6,7 @@ A practice project built to learn and explore web development with HTML, Tailwin
 
 This is a personal learning project. The goal was to practice building a functional issue tracker interface with features like search and user authentication.
 
-## 🛠️ Built With
+##  Built With
 
 - HTML5
 - CSS3 + Tailwind CSS
